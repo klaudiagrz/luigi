@@ -49,7 +49,8 @@ describe('Navigation', () => {
       .should('exist');
   });
 
-  it('Anonymous content', () => {
+  // Disabled, since it only works if autologin is false
+  /*it('Anonymous content', () => {
     cy.get('.fd-shellbar')
       .contains('Visible for all users')
       .should('exist');
@@ -57,7 +58,7 @@ describe('Navigation', () => {
     cy.get('.fd-shellbar')
       .contains('Visible for anonymous users only')
       .should('not.exist');
-  });
+  });*/
 
   describe('features', () => {
     it('keepSelectedForChildren', () => {
